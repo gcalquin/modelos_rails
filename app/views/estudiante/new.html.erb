@@ -1,0 +1,25 @@
+
+
+<h1>Formulario Estudiante formato Rails</h1>
+<br>
+
+<%=form_with model: @estudiante, method: :post do |form| %>
+
+    <div>
+        <%= form.label :nick, "Nick de usuario ", class:"form-label" %>
+        <%= form.text_field :nick, class:"form-control" %>
+
+    </div>
+
+
+    <div>
+    <%= form.label :password, "Clave del usuario ", class:"form-label" %>
+    <%= form.text_field :password, class:"form-control" %>
+
+</div>
+
+<br>
+<%= form.submit %>
+
+
+<% end %>  
